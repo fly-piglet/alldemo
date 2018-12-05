@@ -66,5 +66,6 @@ id字段生成：generatedKey
 
 ### 参考：
 [MyBatis Generator Core – Introduction to MyBatis Generator](http://www.mybatis.org/generator/index.html)
+
 [mybatis – MyBatis 3 | 简介](http://www.mybatis.org/mybatis-3/zh/index.html)
 
