@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!--
+    MyBatis Generator（MBG）由XML配置文件驱动
+    如何连接数据库
+    要生成哪些对象以及如何使用它们
+    应该使用那些表来生成对象
+ -->
+<generatorConfiguration>
+
+    <!--导入配置文件来引用值-->
+    <properties resource="generator.properties"/>
+
+    <!--数据库驱动地址：在引入插件的时候，使用以依赖关系，直接可以引入-->
+    <!--<classPathEntry location="${db.jar}"/>-->
+
+    <context id="context1" targetRuntime="MyBatis3">
+        <!--数据库链接地址账号密码-->
+        <jdbcConnection driverClass="${db.driver}"
+                        connectionURL="${db.url}${context1.db}" userId="${db.username}"
+                        password="${db.password}" />
+
+        <!--生成Model类存放位置-->
+        <javaModelGenerator targetPackage="${package1}.model"  targetProject="${project.path}${project1}/src/main/java"/>
+        <!--生成映射文件存放位置-->
+        <sqlMapGenerator targetPackage="mapper" targetProject="${project.path}${project1}/src/main/resources" />
+        <!--生成Dao类存放位置-->
+        <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码
+                type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
+                type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
+                type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
+        -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="${package1}.mapper" targetProject="${project.path}${project1}/src/main/java" />
+        <!--生成对应表及类名-->
+        <table tableName="%"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true" />
+    </context>
+
+    <context id="context2" targetRuntime="MyBatis3">
+        <!--数据库链接地址账号密码-->
+        <jdbcConnection driverClass="${db.driver}"
+                        connectionURL="${db.url}${context2.db}" userId="${db.username}"
+                        password="${db.password}" />
+
+        <!--生成Model类存放位置-->
+        <javaModelGenerator targetPackage="${package2}.model"  targetProject="${project.path}${project2}/src/main/java"/>
+        <!--生成映射文件存放位置-->
+        <sqlMapGenerator targetPackage="mapper" targetProject="${project.path}${project2}/src/main/resources" />
+        <!--生成Dao类存放位置-->
+        <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码
+                type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
+                type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
+                type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
+        -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="${package2}.mapper" targetProject="${project.path}${project2}/src/main/java" />
+        <!--生成对应表及类名-->
+        <table tableName="%"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true" />
+    </context>
+
+</generatorConfiguration>
