@@ -26,3 +26,14 @@ target
 .idea
 *.impl
 /.idea/
+
+
+### 全局忽略当前目录
+
+
+### 全局忽略当前目录
+**/.idea
+**/target
+**/*.impl
+**/.mvn
+**/mvnw*

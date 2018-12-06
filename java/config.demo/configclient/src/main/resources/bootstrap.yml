@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      # 通过服务器环境变量来配置，默认情况下是本地服务器，或者本地配置文件
+      uri: http://localhost:8080
+      # 通过环境变量，默认是local
+      profile: dev
+      # 通过环境变量，一般默认一般情况分支不同，才需要不同情况下的部署任务
+      label: master
