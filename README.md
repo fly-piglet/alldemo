@@ -7,4 +7,4 @@
 
 [mybatis puls demo](https://github.com/fly-piglet/alldemo/tree/master/java/mybatis/mybatis-plus-demo)
 
-[tk mybatis plus demo](https://github.com/fly-piglet/alldemo/tree/master/java/mybatis/tk-mybatis-demo)
+[tk mybatis plus demo](https://github.com/fly-piglet/alldemo/tree/master/java/mybatis/tk-mybaits-demo)
