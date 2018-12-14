@@ -4,3 +4,7 @@
 [mybatis generator demo](https://github.com/fly-piglet/alldemo/tree/master/java/genpj.parent)
 
 [springcloud config demo server client](https://github.com/fly-piglet/alldemo/tree/master/java/config.demo)
+
+[mybatis puls demo](https://github.com/fly-piglet/alldemo/tree/master/java/mybatis/mybatis-plus-demo)
+
+[tk mybatis plus demo](https://github.com/fly-piglet/alldemo/tree/master/java/mybatis/tk-mybatis-demo)
